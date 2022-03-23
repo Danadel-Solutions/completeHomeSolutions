@@ -8,8 +8,8 @@ const FromBlog = () => {
     <Container>
       <h5 className="topic">From the Blog</h5>
       <Row xs={2} md={3} className="g-20">
-        {products.map((product) => (
-          <Col>
+        {products.map((product, id) => (
+          <Col key={id}>
             <Card>
               <Card.Img variant="top" src={picture} />
               <Card.Body>

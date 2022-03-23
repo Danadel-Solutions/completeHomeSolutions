@@ -8,11 +8,11 @@ const LatestListed = () => {
     <Container>
       <h5 className="topic">Latest Listed Projects</h5>
       <Row xs={1} md={2} className="g-6">
-        {products.map((product) => (
-          <Col>
+        {products.map((product, i) => (
+          <Col key={i}>
             <Card style={{ maxWidth: "30rem" }}>
               <Card.Img variant="top" src={picture} />
-              <Card.Body>
+              <Card.Body className="mx-0">
                 <Card.Title className="latest-title">
                   Terrace Duplex for rent
                 </Card.Title>
@@ -23,7 +23,8 @@ const LatestListed = () => {
                     cooker, microwavek heat extractor and more.
                   </p>
                   <p>
-                    <i class="fa-solid fa-location-dot"></i>Lekki Phase 1, Lagos
+                    <i className="fa-solid fa-location-dot"></i>Lekki Phase 1,
+                    Lagos
                   </p>
                   <p className="price">10,000</p>
                 </Card.Text>

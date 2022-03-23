@@ -47,52 +47,67 @@ header a {
 }
 
 .banner-content {
-  height: 100%;
+  background: rgba(0, 80, 81, 0.6);
+}
+.login-form > p {
+  justify-self: flex-end;
+}
+.accounts-background {
+  background-image: url(./assets/Lagos-City2.jpg) !important;
+  background-position: center top !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: rgba(0, 80, 81, 0.6);
-  padding: auto;
-  font-size: calc(6px + (15 - 6) * ((100vw - 300px) / (1600 - 300)));
+
+  padding: 0 20px;
 }
-.form-group {
+.radio-button {
+  margin: 0 4px;
+}
+.btn-check:checked + label {
+  color: black !important;
+  background: white !important;
+}
+@media (max-width: 768px) {
+  .banner-content > form {
+    width: 98%;
+  }
+}
+.banner-content .radios {
+  display: flex;
+  justify-content: center;
+}
+.radios > input {
+  opacity: 0;
+}
+.radios {
+  width: 100%;
+}
+.radios > label {
+  background: red;
+
+  width: 15%;
+  text-align: center;
+}
+.radios > input:checked + label {
+  background: white;
+}
+.search-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  width: 85%;
+}
+.banner-search {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.form-group input[type="radio"] {
-  opacity: 0;
-}
-.form-group input[type="radio"]:checked + label {
-  background: white;
-}
-.form-group label {
-  background-color: red;
-  width: 20%;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-  margin-right: 3px;
-  padding: 0.7rem 0;
-  border-radius: 10px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.form-group > form {
-  width: 75vw;
-}
-.radios {
-  display: flex;
-  justify-content: center;
-}
-.topic {
-  font-weight: 700;
-  color: rgba(0, 80, 81, 1);
-  margin-bottom: 20px;
-  margin-top: 30px;
+  flex-direction: column;
 }
 /* @media (max-width: 768px) {
   .form-group label {
@@ -126,6 +141,9 @@ header a {
 }
 .latest-title {
   color: rgba(0, 80, 81, 1) !important;
+}
+.topic {
+  color: #005051;
 }
 .footer-top-container {
   display: flex;

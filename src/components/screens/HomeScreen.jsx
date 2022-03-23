@@ -5,6 +5,7 @@ import FeaturedCompanies from "../FeaturedCompanies";
 import FeaturedProjects from "../FeaturedProjects";
 import LatestListed from "../LatestListed";
 import FromBlog from "../FromBlog";
+import Footer from "../Footer";
 
 const HomeScreen = () => {
   return (
@@ -14,6 +15,7 @@ const HomeScreen = () => {
       <FeaturedProjects />
       <LatestListed />
       <FromBlog />
+      <Footer />
     </div>
   );
 };

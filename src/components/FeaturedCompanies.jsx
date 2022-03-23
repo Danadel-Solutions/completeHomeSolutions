@@ -9,10 +9,10 @@ const FeaturedCompanies = () => {
       <h5 className="topic topic-companies">Featured Real Estate Companies</h5>
       <Row className="companies">
         <div>
-          <Image src={iconOne} />
+          <Image src={iconTwo} />
         </div>
         <div>
-          <Image src={iconTwo} />
+          <Image src={iconOne} />
         </div>
       </Row>
     </Container>

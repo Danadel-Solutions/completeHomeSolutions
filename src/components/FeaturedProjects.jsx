@@ -8,8 +8,8 @@ const FeaturedProjects = () => {
     <Container className="featured-projects">
       <h5 className="topic">Featured Projects</h5>
       <Row xs={1} md={2} className="g-6">
-        {products.map((product) => (
-          <Col>
+        {products.map((product, i) => (
+          <Col key={i}>
             <Card>
               <Card.Img variant="top" src={picture} />
               <Card.Body>
@@ -17,11 +17,10 @@ const FeaturedProjects = () => {
                   The Maximila
                 </Card.Title>
                 <Card.Text>
-                  <p>
-                    <i class="fa-solid fa-location-dot"></i>Lekki Phase 1, Lagos
-                  </p>
-                  <p className="price">10,000</p>
+                  <i className="fa-solid fa-location-dot"></i>Lekki Phase 1,
+                  Lagos
                 </Card.Text>
+                <p className="price">10,000</p>
               </Card.Body>
             </Card>
           </Col>
