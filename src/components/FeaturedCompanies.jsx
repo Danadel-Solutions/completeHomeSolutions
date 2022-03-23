@@ -5,7 +5,7 @@ import iconTwo from "../assets/Artboard.png";
 
 const FeaturedCompanies = () => {
   return (
-    <Container className="featured-companies">
+    <Container className="mt-5 featured-companies">
       <h5 className="topic topic-companies">Featured Real Estate Companies</h5>
       <Row className="companies">
         <div>

@@ -60,6 +60,7 @@ const Banner = () => {
               >
                 <Col>
                   <Form.Select
+                    size="lg"
                     className="w-100 mb-3"
                     aria-label="Default select example"
                   >
@@ -72,6 +73,7 @@ const Banner = () => {
                 </Col>
                 <Col>
                   <Form.Select
+                    size="lg"
                     className="w-100"
                     aria-label="Default select example"
                   >
@@ -85,6 +87,7 @@ const Banner = () => {
                 </Col>
                 <Col>
                   <Form.Select
+                    size="lg"
                     className="w-100"
                     aria-label="Default select example"
                   >
@@ -96,6 +99,7 @@ const Banner = () => {
                 </Col>
                 <Col>
                   <Form.Select
+                    size="lg"
                     className="w-100"
                     aria-label="Default select example"
                   >

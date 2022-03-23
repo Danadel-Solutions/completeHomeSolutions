@@ -5,7 +5,7 @@ import { products } from "../assets/products";
 
 const FeaturedProjects = () => {
   return (
-    <Container className="featured-projects">
+    <Container className="featured-projects mt-5">
       <h5 className="topic">Featured Projects</h5>
       <Row xs={1} md={2} className="g-6">
         {products.map((product, i) => (

@@ -5,7 +5,7 @@ import { products } from "../assets/products";
 
 const LatestListed = () => {
   return (
-    <Container>
+    <Container className="mt-5">
       <h5 className="topic">Latest Listed Projects</h5>
       <Row xs={1} md={2} className="g-6">
         {products.map((product, i) => (
