@@ -57,7 +57,7 @@ header a {
   background-position: center top !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

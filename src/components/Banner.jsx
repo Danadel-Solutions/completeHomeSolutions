@@ -47,6 +47,7 @@ const Banner = () => {
             <Row className="  rounded py-5">
               <Col sm={12} className="d-flex justify-content-center">
                 <Form.Control
+                  size="lg"
                   placeholder="Enter a state, locality or area"
                   type="text"
                 ></Form.Control>

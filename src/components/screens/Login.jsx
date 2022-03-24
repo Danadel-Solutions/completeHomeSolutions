@@ -1,9 +1,14 @@
 import React from "react";
 import { Form, Col, Button, Row, Container } from "react-bootstrap";
-
+import { Helmet } from "react-helmet";
 const Login = () => {
   return (
     <div className="accounts-background">
+      <Helmet>
+        <title>HomeSolution-Login</title>
+        <meta charSet="utf-8" />
+        <meta name="Login" content="Log in to your account" />
+      </Helmet>
       <Container className="align-content-center justify-content-center mt-5">
         <Row className="justify-content-center align-content-center">
           <Col sm={10} md={8}>
